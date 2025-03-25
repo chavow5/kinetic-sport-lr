@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    {/* <img src="./img/ViaPass_logo_horizontal.png" alt="logo" className="logo-ViaPass" style={{ width: "150px", height: "auto" }} /> */}
+    <img src="/image/Logo-kinetic.png" alt="logo" className="logo-kinetic" style={{ width: "150px", height: "auto" }} />
     <h2>Kinetic Sport</h2>
     {/* <h3>Sistema de peaje manual</h3> */}
     <nav className='header-nav'>
