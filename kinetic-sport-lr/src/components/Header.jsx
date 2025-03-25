@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
+    <div className="logo-title-container">
     <Link to="/">
-      <img src="/image/Logo-kinetic.png" alt="logo" className="logo-kinetic" style={{ width: "150px", height: "auto" }} />
+      <img src="/image/Logo-kinetic.png" alt="logo" className="logo-kinetic" style={{ width: "100px", height: "auto" }} />
     </Link>
-    <h2>Kinetic Sport</h2>
+    <h2>
+      <span className="kinetic">Kinetic  </span> <span className="sport"> Sport</span>
+    </h2>
+    </div>
     {/* <h3>Sistema de peaje manual</h3> */}
     <nav className='header-nav'>
       <Link to="/">Inicio</Link>
