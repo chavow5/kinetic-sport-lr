@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* 
+color celeste claro 95a9d9
+color gris claro #80858f
+
+*/
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light rgb(0, 0, 255);
+  color: rgb(45, 45, 47);
+  background-color: #2f2f7e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-color: #80858f;
+  }
+  
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  @layer utilities {
+    .animate-pulse-slow {
+      animation: pulseBg 10s infinite alternate;
+    }
+  
+    @keyframes pulseBg {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  }

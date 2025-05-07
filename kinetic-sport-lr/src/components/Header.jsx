@@ -1,27 +1,52 @@
-// import React from 'react'; //version +17  npm list react     
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Menu, X } from "lucide-react"; // Iconos 
+import logo from "../assets/logo-kinetic.png"; 
 
-const Header = () => (
-  <header>
-    <div className="logo-title-container">
-    <Link to="/">
-      <img src="/image/Logo-kinetic.png" alt="logo" className="logo-kinetic" style={{ width: "100px", height: "auto" }} />
-    </Link>
-    <h2>
-      <span className="kinetic">Kinetic  </span> <span className="sport"> Sport</span>
-    </h2>
-    </div>
-    {/* <h3>Sistema de peaje manual</h3> */}
-    <nav className='header-nav'>
-      <Link to="/">Inicio</Link>
-      {/* <Link to="/login">Login</Link> */}
-      <Link to="/aboutus">Sobre Nosotros</Link>
-      <Link to="/contacto">Contacto</Link>
-      {/* <Link to="/viapass">ViaPass</Link> */}
-      {/* <Link to="/sistemapeaje">Sistema Peaje</Link> */}
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    </nav>
-  </header>
-);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <header className="bg-black text-white fixed top-0 w-full z-50 shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img src={logo} alt="Logo" className="h-16 mr-2" />
+          {/* <span className="text-xl font-semibold">CHAVO</span> */}
+        </div>
+
+        {/* Navegacion */}
+        <nav className="hidden md:flex space-x-6 ">
+          <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
+          <a href="#servicios" className="block hover:text-gray-300">Servicios</a>
+          <a href="#aboutme" className="block hover:text-gray-300">Sobre Nosotros</a>
+          <a href="#turnos" className="block hover:text-gray-300">Turnos</a>
+          <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
+        </nav>
+
+        {/* Botón hamburguesa*/}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="focus:outline-none">
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Navegacion celular  */}
+      {menuOpen && (
+        <div className="md:hidden text-center bg-black px-4 pb-4 space-y-2">
+          <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
+          <a href="#servicios" className="block hover:text-gray-300">Servicios</a>
+          <a href="#aboutme" className="block hover:text-gray-300">Sobre Nosotros</a>
+          <a href="#turnos" className="block hover:text-gray-300">Turnos</a>
+          <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
+
+          <button onClick={toggleMenu} className="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full w-full">Cerrar</button>
+        </div>
+      )}
+    </header>
+  );
+};
 
 export default Header;
