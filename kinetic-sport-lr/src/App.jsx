@@ -4,6 +4,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contactos";
 import Footer from "./components/Footer";
+import ContenidoDesdeSheets from "./components/Drive";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <main className="pt-16">
         <Hero />
         <About />
+        <ContenidoDesdeSheets />
         <Services />
         <Contact />
       </main>
