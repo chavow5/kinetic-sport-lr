@@ -4,7 +4,8 @@ const profesionales = [
   {
     nombre: "Lic. David Ramirez",
     especialidad: "Kinesiología Deportiva",
-    descripcion: "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
+    descripcion:
+      "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
     imagen: "images/david.png",
     whatsapp: "543804123456",
     instagram: "https://instagram.com/david",
@@ -12,7 +13,8 @@ const profesionales = [
   {
     nombre: "Lic. Ramirez David",
     especialidad: "Kinesiología Deportiva",
-    descripcion: "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
+    descripcion:
+      "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
     imagen: "images/david.png",
     whatsapp: "543804654321",
     instagram: "https://instagram.com/david",
@@ -20,7 +22,8 @@ const profesionales = [
   {
     nombre: "Lic. Ramirez David",
     especialidad: "Kinesiología Deportiva",
-    descripcion: "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
+    descripcion:
+      "Especialista en rehabilitación funcional de lesiones deportivas. Más de 10 años de experiencia.",
     imagen: "images/david.png",
     whatsapp: "543804654321",
     instagram: "https://instagram.com/david",
@@ -63,6 +66,12 @@ const Profesionales = () => {
                 className="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full transition"
               >
                 Instagram
+              </a>
+              <a
+                href="#contacto"
+                className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-1 py-2 rounded-full transition"
+              >
+                Solicitar Turno
               </a>
             </div>
           </div>

@@ -22,9 +22,9 @@ const Hero = () => {
 />
 		</div>
 	</div>
-    </section>
-  );
-};
-
-export default Hero;
+</section>
+ );
+ };
+ 
+ export default Hero;
 

@@ -70,6 +70,7 @@ const Services = () => {
             />
             <div className="text-3xl mb-1">{s.icon}</div>
             <p className="font-semibold">{s.name}</p>
+            <p className="text-gray-500 text-sm mt-2">Haz clic para ampliar ⬇</p>
 
             {activeIndex === i && (
               <div className="mt-4 text-sm text-gray-700 animate-fade-in">
