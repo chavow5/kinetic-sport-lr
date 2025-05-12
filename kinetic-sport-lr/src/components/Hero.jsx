@@ -1,24 +1,27 @@
 const Hero = () => {
   return (
-    <section
-      className="h-[70vh] sm:h-screen bg-cover bg-center relative flex items-center justify-center text-center"
-      style={{ backgroundImage: "url('/banner3.png')",backgroundPosition: "left top" } }
-    >
-      {/* <div className="bg-black bg-opacity-50 p-6 rounded-xl text-white max-w-md mx-4">
-        <h1 className="text-3xl sm:text-4xl font-extrabold mb-2">KINETIC <span className="block">SPORT LR</span></h1>
-        <p className="mb-4 text-sm sm:text-base italic">
-          Centro médico, rehabilitación, <br />
-          nutrición y entrenamiento deportivo.
-        </p>
-        
-      </div> */}
-      <div><a
-          href="#contacto"
-          className="bg-white text-black font-bold py-2 px-4 rounded-full hover:bg-gray-400 transition duration-300 ease-in-out absolute bottom-12 sm:bottom-20 left-40 sm:right-"
-          style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.7)" }}
-        >
-          SOLICITAR TURNO
-        </a></div>
+<section className="dark:bg-gray-100 dark:text-gray-800">
+	<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+			<h1 className="text-5xl font-bold leading-none sm:text-6xl">Kinetic 
+				<span className="dark:text-blue-600"> Sport </span> LR
+			</h1>
+			<p className="mt-6 mb-8 text-lg sm:mb-12">Centro médico, rehabilitación, nutrición y entrenamiento deportivo.
+				<br  className="hidden md:inline lg:hidden" /> kinesiologia, medicina deportiva, nutrición y entrenamiento personalizado.
+			</p>
+			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-blue-600 dark:text-gray-50">Solicitar Turno</a>
+				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Contactar</a>
+			</div>
+		</div>
+		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+				<img
+  src="./banner2.png"
+  alt="banner.jpg"
+  className="object-contain h-96 sm:h-112 lg:h-[32rem] xl:h-[40rem] 2xl:h-[48rem] "
+/>
+		</div>
+	</div>
     </section>
   );
 };
