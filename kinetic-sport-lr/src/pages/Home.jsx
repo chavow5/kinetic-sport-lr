@@ -1,16 +1,16 @@
-import HeroSection from '../components/HeroSection';
-import Aboutme from '../components/Aboutme';
-import Proyectos from '../components/Proyectos';
-import Certificados from '../components/Certificados';
-import Contactos from '../components/Contactos';
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Profesionales from "../components/Profesionales";
+import Contactos from "../components/Contactos";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
     <main>
-      <HeroSection />
-      <Aboutme />
-      <Proyectos />
-      <Certificados />
+      <Hero />
+      <About />
+      <Profesionales />
+      <Services />
       <Contactos />
     </main>
   );
