@@ -3,6 +3,7 @@ import About from "../components/About";
 import Profesionales from "../components/Profesionales";
 import Contactos from "../components/Contactos";
 import Services from "../components/Services";
+import Instagram from "../components/Instagram";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Profesionales />
       <Services />
       <Contactos />
+      <Instagram />
     </main>
   );
 };

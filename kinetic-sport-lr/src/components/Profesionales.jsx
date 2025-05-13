@@ -55,21 +55,22 @@ const Profesionales = () => {
                 href={`https://wa.me/${prof.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition"
+                className="bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white text-sm px-4 py-2 rounded-full shadow-md hover:shadow-lg transition"
               >
                 WhatsApp
               </a>
+
               <a
                 href={prof.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full transition"
+                className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-sm px-4 py-2 rounded-full transition"
               >
                 Instagram
               </a>
               <a
                 href="#contacto"
-                className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-1 py-2 rounded-full transition"
+                className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white text-sm px-4 py-2 rounded-full shadow-md hover:shadow-lg transition"
               >
                 Solicitar Turno
               </a>
