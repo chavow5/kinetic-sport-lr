@@ -8,7 +8,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="bg-black text-white fixed top-0 w-full z-50 shadow-md">
+    <header className="bg-blue-950 text-white fixed top-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center">

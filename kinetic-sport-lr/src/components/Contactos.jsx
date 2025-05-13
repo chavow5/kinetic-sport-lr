@@ -14,17 +14,22 @@ const Contact = () => {
 
   return (
     <section id="contacto" className="py-16 px-4 bg-gray-100 text-gray-800">
-      <h2 className="text-3xl font-bold mb-10 text-center">Turnos y Contacto</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">
+        Turnos y Contacto
+      </h2>
 
       <div className="flex flex-col lg:flex-row gap-8 items-start justify-center max-w-6xl mx-auto">
         {/* Sección Turnos */}
         <div className="w-full lg:w-1/2 bg-white p-6 rounded-lg shadow-lg animate-fade-in">
           <h3 className="text-2xl font-semibold mb-4">Turnos por WhatsApp</h3>
           <p className="mb-2 text-gray-700">
-            Podés solicitar tu turno enviando un mensaje por WhatsApp. Indicá tu nombre, motivo de la consulta y disponibilidad horaria.
+            Podés solicitar tu turno enviando un mensaje por WhatsApp. Indicá tu
+            nombre, motivo de la consulta y disponibilidad horaria.
           </p>
           <p className="mb-2 text-sm text-gray-600 italic">
-            Vas a escribirle a <span className="font-semibold text-gray-800">{nombre}</span> al número <span className="font-semibold">3804-201334</span>
+            Vas a escribirle a{" "}
+            <span className="font-semibold text-gray-800">{nombre}</span> al
+            número <span className="font-semibold">3804-201334</span>
           </p>
 
           <textarea
@@ -50,22 +55,55 @@ const Contact = () => {
             <span role="img" aria-label="ubicación">
               📍
             </span>
+            {/* ubicacion */}
             <a
               href="https://www.google.com/maps?q=Av.+Alem+191,+La+Rioja,+Argentina"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              {/* agregar la ubicacion */}
               Av. Alem 191, La Rioja
             </a>
           </p>
+          {/* telefono */}
           <p className="mb-4 flex items-center gap-2 text-lg">
             <span role="img" aria-label="teléfono">
               📞
             </span>
-            {/* agregar numero de telefono */}
             3804-201334
+          </p>
+          {/* instagram */}
+          <p className="mb-4 flex items-center gap-2 text-lg">
+            <span role="img" aria-label="instagram">
+              📷
+            </span>
+            <a
+              href="https://www.instagram.com/kineticsportlr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              @kineticsportlr
+            </a>
+          </p>
+          {/* mail */}
+          <p className="mb-4 flex items-center gap-2 text-lg">
+            <span role="img" aria-label="correo">
+              ✉️
+            </span>
+            <a
+              href="mailto:contacto@kineticsport.com"
+              className="text-blue-600 hover:underline"
+            >
+              Kineticsportlr@gmail.com
+            </a>
+          </p>
+          {/* horarios */}
+          <p className="mb-4 flex items-center gap-2 text-lg">
+            <span role="img" aria-label="horario">
+              🕒
+            </span>
+            Lunes a Viernes: 16:30 PM - 22:00 PM
           </p>
         </div>
 

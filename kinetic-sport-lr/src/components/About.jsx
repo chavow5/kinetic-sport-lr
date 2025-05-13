@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <section id="nosotros" className="py-12 bg-gray-100 text-center animate-fade-in">
-      <h2 className="text-3xl font-bold mb-4">Sobre Nosotros</h2>
-      <p className="max-w-2xl mx-auto text-gray-700">
+    <section id="nosotros" className="py-12 bg-blue-950 text-center animate-fade-in">
+      <h2 className="text-3xl font-bold mb-4 text-white">Sobre Nosotros</h2>
+      <p className="max-w-2xl mx-auto text-white">
         Somos un equipo profesional de kinesiólogos especializados en rehabilitación deportiva y postural. Trabajamos con vocación, tecnología y compromiso con tu salud.
       </p>
-      <div className="max-w-3xl mx-auto mt-8 text-gray-700 text-left">
+      <div className="max-w-3xl mx-auto mt-8 text-white text-left">
         <h3 className="text-2xl font-semibold mb-2">Historia y Evolución de la Kinesiología</h3>
         <p>
           La Kinesiología, tal como la conocemos hoy, tiene sus raíces en la antigua práctica de la medicina gimnástica y la kinesioterapia, pero se formalizó como disciplina científica y profesional en el siglo XX. La Escuela de Kinesiología de la Universidad de Buenos Aires fue fundada en 1937, marcando un hito en la historia de la kinesiología en Argentina.
