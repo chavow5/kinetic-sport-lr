@@ -34,10 +34,11 @@ const Footer = () => {
         <div className="space-y-3 text-center md:text-left">
           <h4 className="text-lg font-bold text-indigo-300">Navegación</h4>
           <ul className="space-y-1">
-            <li><a href="#inicio" className="hover:text-indigo-200">Inicio</a></li>
-            <li><a href="#aboutme" className="hover:text-indigo-200">Sobre mí</a></li>
-            <li><a href="#proyectos" className="hover:text-indigo-200">Proyectos</a></li>
-            <li><a href="#certificados" className="hover:text-indigo-200">Certificados</a></li>
+            <li><a href="#" className="hover:text-indigo-200">Inicio</a></li>
+            <li><a href="#nosotros" className="hover:text-indigo-200">Sobre Nosotros</a></li>
+            <li><a href="#equipo" className="hover:text-indigo-200">Nuestro Equipo</a></li>
+            <li><a href="#servicios" className="hover:text-indigo-200">Servicios</a></li>
+            <li><a href="#turnos" className="hover:text-indigo-200">Turnos</a></li>
             <li><a href="#contacto" className="hover:text-indigo-200">Contacto</a></li>
           </ul>
         </div>
