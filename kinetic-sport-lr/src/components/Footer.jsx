@@ -8,10 +8,10 @@ const Footer = () => {
   // falta mejorara el footer completo
 
   return (
-    <footer className="relative bg-gradient-to-tr from-[#080714] via-[#2d2a4d] to-[#0a0a11] text-white">
+    <footer className="relative bg-black  text-white">
       {/* SVG decorativo en la parte superior */}
       <svg
-        className="absolute top-0 w-full h-8 -mt-5 sm:-mt-10 sm:h-16 text-[#2d2a4d]"
+        className="absolute top-0 w-full h-8 -mt-5 sm:-mt-10 sm:h-16 text-[#000000]"
         preserveAspectRatio="none"
         viewBox="0 0 1440 54"
       >
@@ -24,10 +24,10 @@ const Footer = () => {
       <div className="relative z-10 px-6 py-12 max-w-7xl mx-auto grid gap-10 md:grid-cols-3 text-sm">
         {/* Contacto */}
         <div className="space-y-3 text-center md:text-left">
-          <h4 className="text-lg font-bold text-indigo-300">Contacto</h4>
-          <p>Email: davidramirezw6@gmail.com</p>
-          <p>Teléfono: 3804201334</p>
-          <p>Ubicación: La Rioja, Argentina</p>
+          <h4 className="text-lg font-bold text-indigo-300">Kinetic Sport LR</h4>
+          <p>Ubicacion: Av. Alem 191, La Rioja - Argentina</p>
+          <p>Whatsapp: 3804201334</p>
+          <p>Instagram: @kineticSportLr</p>
         </div>
 
         {/* Navegación */}
@@ -45,8 +45,9 @@ const Footer = () => {
         {/* Redes y botón */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
           <div>
-            <h4 className="text-lg font-bold text-indigo-300 mb-2">Redes Sociales</h4>
+            <h4 className="text-lg font-bold text-indigo-300 mb-2">Desarollo Web</h4>
             <div className="flex gap-5">
+              {/* <p>@davidramirez_651</p> */}
               <a href="https://github.com/chavow5" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-2xl hover:text-indigo-200 transition" />
               </a>
