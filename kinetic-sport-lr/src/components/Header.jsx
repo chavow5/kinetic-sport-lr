@@ -18,9 +18,10 @@ const Header = () => {
 
         {/* Navegacion */}
         <nav className="hidden md:flex space-x-6 ">
-          <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
+          <a href="#" className="block hover:text-gray-300">Inicio</a>
+          <a href="#nosotros" className="block hover:text-gray-300">Sobre Nosotros</a>
+          <a href="#Equipo" className="block hover:text-gray-300">Equipo</a>
           <a href="#servicios" className="block hover:text-gray-300">Servicios</a>
-          <a href="#aboutme" className="block hover:text-gray-300">Sobre Nosotros</a>
           <a href="#turnos" className="block hover:text-gray-300">Turnos</a>
           <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
         </nav>
@@ -35,13 +36,13 @@ const Header = () => {
 
       {/* Navegacion celular  */}
       {menuOpen && (
-        <div className="md:hidden text-center bg-black px-4 pb-4 space-y-2">
-          <a href="#inicio" className="block hover:text-gray-300">Inicio</a>
+        <div className="md:hidden text-center bg-blue-950 px-4 pb-4 space-y-2">
+          <a href="#" className="block hover:text-gray-300">Inicio</a>
+          <a href="#nosotros" className="block hover:text-gray-300">Sobre Nosotros</a>
+          <a href="#Equipo" className="block hover:text-gray-300">Equipo</a>
           <a href="#servicios" className="block hover:text-gray-300">Servicios</a>
-          <a href="#aboutme" className="block hover:text-gray-300">Sobre Nosotros</a>
           <a href="#turnos" className="block hover:text-gray-300">Turnos</a>
           <a href="#contacto" className="block hover:text-gray-300">Contacto</a>
-
           <button onClick={toggleMenu} className="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full w-full">Cerrar</button>
         </div>
       )}
