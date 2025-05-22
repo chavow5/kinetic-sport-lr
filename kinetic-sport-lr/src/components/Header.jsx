@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Iconos 
-import logo from "../assets/logo-kinetic.png"; 
+// import logo from "./images/logo-kinetic3.png"; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-16 mr-2" />
+          <img src="/images/Logo-kinetic3.png" alt="Logo" className="h-16 mr-2" />
           {/* <span className="text-xl font-semibold">CHAVO</span> */}
         </div>
 
